@@ -52,7 +52,9 @@ npm install --save-dev typescript@5.0.2
 
 # other dependencies
 npm install axios
+npm install --save-dev @types/axios
 npm install express
+npm install --save-dev @types/express
 
 # for requests
 npm install http
@@ -221,6 +223,7 @@ For more details watch [Video.](https://drive.google.com/file/d/1_Hl1Ds3LsuCWHkK
 **Project Folder Structure**
 ```
 swift/
+├── .gitignore
 ├── node_modules/
 ├── package.json
 ├── package-lock.json
@@ -230,9 +233,18 @@ swift/
 ├── server.http
 └── src/
     ├── server.ts
-    ├── utils/
     ├── db/
+    │   └── db.ts
     ├── models/
+    │   ├── User.ts
+    │   ├── Post.ts
+    │   └── Comment.ts
     ├── controllers/
-    └── routes/
+    │   ├── load.controller.ts
+    │   └── user.controller.ts
+    ├── routes/
+    │   ├── load.routes.ts
+    │   └── user.routes.ts
+    └── utils/
+        └── wrapAsync.ts
 ```
