@@ -1,0 +1,46 @@
+# Load data to DB
+GET http://localhost:3000/load
+###
+
+# Delete all users
+DELETE http://localhost:3000/users
+###
+
+# Delete a specific user
+DELETE http://localhost:3000/users/1
+###
+
+# Get a specific user
+GET http://localhost:3000/users/2
+###
+
+# Add a new user
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 123,
+  "name": "New User",
+  "username": "newuser123",
+  "email": "new@user.com",
+  "address": {
+    "street": "Main",
+    "suite": "Apt. 1",
+    "city": "Testville",
+    "zipcode": "12345",
+    "geo": { "lat": "0.0", "lng": "0.0" }
+  },
+  "phone": "123-456-7890",
+  "website": "newuser.com",
+  "company": {
+    "name": "Test Corp",
+    "catchPhrase": "Testing the world",
+    "bs": "test everything"
+  },
+  "posts": []
+}
+###
+
+# Get all users with pagination and sorting
+GET http://localhost:3000/users?page=2&limit=5&sort=name&order=desc
+###
