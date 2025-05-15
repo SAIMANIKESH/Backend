@@ -23,10 +23,11 @@ Designed a simple Node.js web server/application, having a set of REST endpoints
 
 👉 All request & response bodies are properly typed
 
-👉 Created three separate DB collections called users, posts, comments & stored the data in the appropriate DB collection.
-👉 User growth metrics and trip analytics
+👉 Created three separate DB collections called users, posts, comments & stored the data in the appropriate DB collection
 
-👉 Created a video for smooth experience.
+👉 Added bonus feature Pagination and Sorting to fetch data in efficient way
+
+👉 Created a video for smooth experience to run the project
 
 ## <a name="quick-start" style='text-decoration:none;'> 🚀 Quick Start</a>
 
@@ -248,3 +249,6 @@ swift/
     └── utils/
         └── wrapAsync.ts
 ```
+
+## <a name="reference" style='text-decoration:none;'>📚 Reference Material</a>
+Checkout [Here.](https://www.notion.so/Swift-Assignment-Reference-Document-1f3bd483d8d980b2b7f2dced1cb89c03)
