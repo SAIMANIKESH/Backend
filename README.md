@@ -1,7 +1,5 @@
 <div align="center">
-  <h1># SWIFT <br /> 
-    <span>Backend Assignment</span>
-  </h1>
+  <h1>Backend Project</h1>
 </div>
 
 ## <a name="preview" style='text-decoration:none;'>🔍 Preview</a>
